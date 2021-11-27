@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "firebase-auth",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

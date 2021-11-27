@@ -1,0 +1,48 @@
+#update-name,
+#update-birthdate {
+  border: black;
+  border-width: 2px;
+  background-color: rgb(236, 227, 227);
+  border-radius: 6px;
+  text-align: start;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+  font-size: 18px;
+  max-width: 17rem;
+}
+
+.title-update {
+  margin-bottom: 0rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.sub-title {
+  margin-left: 1.3rem;
+  margin-top: 0rem;
+  color: rgb(119, 119, 119) !important;
+  font-size: larger !important;
+  font-weight: 400;
+}
+
+.button {
+  margin: auto;
+  margin-top: 2rem;
+  width: 90%;
+  font-size: 18px;
+  height: 3rem;
+}
+
+.redirect {
+  margin-left: 3.7rem;
+}
+
+.update-section {
+  margin: auto;
+  height: 30rem;
+  margin-top: 7rem;
+  background-color: white;
+  width: 80%;
+}

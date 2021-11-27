@@ -1,0 +1,25 @@
+#logout-button {
+  margin-left: 1rem;
+}
+
+ion-img {
+  margin: auto;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+}
+
+.label {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  width: 30rem;
+  font-size: larger;
+}
+
+.profile-section {
+  background-color: white;
+  height: 40rem;
+  width: 80%;
+  margin: auto;
+}

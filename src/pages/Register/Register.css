@@ -1,0 +1,52 @@
+#input-email,
+#input-password,
+#input-repeat-password {
+  border: black;
+  border-width: 2px;
+  background-color: rgb(236, 227, 227);
+  border-radius: 6px;
+  text-align: start;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+  font-size: 18px;
+  max-width: 17rem;
+}
+
+ion-content {
+  --background: url(https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?size=626&ext=jpg)
+    0 0/100% 100% no-repeat;
+}
+
+.title {
+  margin-bottom: 0rem;
+  margin-top: 3rem;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.sub-title {
+  margin-left: 1.3rem;
+  margin-top: 0rem;
+  color: rgb(119, 119, 119) !important;
+  font-size: larger !important;
+  font-weight: 400;
+}
+
+.button {
+  margin: auto;
+  margin-top: 1rem;
+  width: 90%;
+  font-size: 18px;
+  height: 3rem;
+}
+
+.to-login {
+  margin-left: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.register-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
