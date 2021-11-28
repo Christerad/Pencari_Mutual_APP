@@ -1,19 +1,31 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonTabs,IonRouterOutlet,IonTabBar,IonTabButton,IonIcon,IonLabel } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { logIn,heartCircle,personOutline } from "ionicons/icons";
+import { RootState } from "../../store";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory, } from "react-router";
 import React from 'react';
+import Profile from '../Profile/Profile';
+import UpdateProfile from '../UpdateProfile/UpdateProfile';
+import { Redirect, Route } from 'react-router-dom';
 
 const Cari_Jodoh: React.FC = () => {
+  const user = useSelector((state: RootState) => state.user);
+
   return (
     <IonPage>
     <IonReactRouter>
     <IonTabs>
       <IonRouterOutlet>
-        {/* <Route path="/home" component={Home} exact={true} />
-        <Route path="/Cari_Jodoh" component={Cari_Jodoh} />
-        <Route path="/Profil" component={Profil} />
-
-        <Route exact path="/" render={() => <Redirect to="/home" />} /> */}
+        <Route exact path="/profile">
+            {user ? <Profile /> : <Redirect to="/login" />}
+        </Route>
+        <Route exact path="/update">
+         {user ? <UpdateProfile /> : <Redirect to="/login" />}
+        <Route exact path="/CariJodoh">
+           {user ? <Cari_Jodoh /> : <Redirect to="/login" />}
+        </Route>
+        </Route>
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
         <IonTabButton href="/home" tab="home">
@@ -24,12 +36,12 @@ const Cari_Jodoh: React.FC = () => {
         <IonIcon icon= {heartCircle}></IonIcon>
           <IonLabel>Cari Jodoh</IonLabel>
         </IonTabButton>
-        <IonTabButton href="/update" tab="Profil">
+        <IonTabButton href="/profile" tab="Profile">
         <IonIcon icon= {personOutline}></IonIcon>
           <IonLabel>Profil</IonLabel>
         </IonTabButton>
       </IonTabBar>
-      </IonTabs>
+    </IonTabs>
     </IonReactRouter>
     <IonHeader>
       <IonToolbar>
