@@ -45,13 +45,13 @@ const UpdateProfile: React.FC = () => {
         userRef.set(data);
         dispatch(setUser(data));
         swal.fire(`Congratulation!`, `Update succeed`, `success`);
-        history.push("/");
+        history.push("/Profile");
       }
     }
   }
 
   function back() {
-    history.push("/");
+    history.push("/Profile");
   }
 
   return (

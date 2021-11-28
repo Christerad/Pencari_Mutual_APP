@@ -42,9 +42,12 @@ const App: React.FC = () => {
           <Route exact path="/login">
             <Login />
           </Route>
+          {/* <Route exact path="/profile">
+            {user ? <Profile /> : <Redirect to="/login" />}
+          </Route>
           <Route exact path="/update">
             {user ? <UpdateProfile /> : <Redirect to="/login" />}
-          </Route>
+          </Route> */}
           <Route exact path="/">
             {user ? <Profile /> : <Redirect to="/login" />}
           </Route>
