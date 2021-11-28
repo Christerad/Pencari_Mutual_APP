@@ -4,6 +4,8 @@ import { IonReactRouter } from "@ionic/react-router";
 import Register from "./pages/Register/Register";
 import Profile from "./pages/Profile/Profile";
 import Login from "./pages/Login/Login";
+import UpdateProfile from "./pages/UpdateProfile/UpdateProfile";
+import Cari_Jodoh from "./pages/Carijodoh/Cari_Jodoh";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -25,7 +27,7 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import { useSelector } from "react-redux";
 import { RootState } from "./store";
-import UpdateProfile from "./pages/UpdateProfile/UpdateProfile";
+
 
 const App: React.FC = () => {
   const user = useSelector((state: RootState) => state.user);
@@ -45,6 +47,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/">
             {user ? <Profile /> : <Redirect to="/login" />}
+          </Route>
+          <Route exact path="/CariJodoh">
+            {user ? <Cari_Jodoh /> : <Redirect to="/login" />}
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

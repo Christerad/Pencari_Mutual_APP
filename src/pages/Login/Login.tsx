@@ -50,7 +50,7 @@ const Login: React.FC = () => {
               profilePic: data.profilePic,
             })
           );
-          history.push("/");
+          history.push("/CariJodoh");
         } else {
           swal.fire(`Invalid email/password`);
         }
@@ -80,14 +80,14 @@ const Login: React.FC = () => {
             profilePic: data.user?.photoURL,
           })
         );
-        history.push("/");
+        history.push("/CariJodoh");
       } else {
         const email = data.user?.email || undefined;
         const userRef = firestore.collection("users");
         const doc = userRef.doc(email).get();
         const user = doc.then((data) => {
           dispatch(setUser(data.data()));
-          history.push("/");
+          history.push("/CariJodoh");
         });
       }
     });
