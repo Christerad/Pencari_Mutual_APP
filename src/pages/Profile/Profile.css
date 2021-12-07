@@ -7,7 +7,8 @@ ion-img {
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  width: 20rem;
+  width: 400rpx;
+  height : 150px;
 }
 
 .label {

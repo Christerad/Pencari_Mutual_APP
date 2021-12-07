@@ -30,7 +30,6 @@
     "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2",
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
     "sweetalert2": "^11.1.2",
@@ -74,7 +73,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.1.2"
+    "@capacitor/cli": "3.1.2",
+    "react-scripts": "4.0.2"
   },
   "description": "An Ionic project"
 }

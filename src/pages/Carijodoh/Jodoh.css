@@ -1,0 +1,17 @@
+.item-sub-title{
+    text-align: left;
+    width:300px;
+    height:100px;
+    object-fit: cover;
+}
+
+.img-profile {
+    margin-right:10px !important;
+    padding:0 10px;
+    width:80px;
+}
+
+.item-custom {
+    --padding-start: 0px;
+}
+

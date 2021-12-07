@@ -3,6 +3,7 @@ import Jodoh from './Jodoh';
 import firebase from 'firebase';
 import {useCollection} from "react-firebase-hooks/firestore";
 import {IonList,IonItem,IonText} from '@ionic/react';
+import "./JodohList.css" ; 
 
 interface Props {
     doEdit:any
