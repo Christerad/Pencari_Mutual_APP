@@ -1,29 +1,15 @@
 import React, {useState} from 'react';
 import { IonContent, IonHeader, IonPage, 
   IonCard, IonTitle, IonToolbar, IonCardHeader, IonCardContent, IonButton, IonButtons, IonMenuButton, IonList } from '@ionic/react';
-import JodohList from './JodohList';
+import GebetList from './GebetList';
 import './TrueJodoh.css'; 
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store";
 
 
-const Tab1: React.FC = () => {
+const TrueGebet: React.FC = () => {
   const user = useSelector((state: RootState) => state.user);
   const [current, setCurrent] = useState(null);
-
-  const getEmpty=()=>{
-  return ({
-    
-    title: '',
-    content: '',
-    date: '',
-    location: '',
-    picture: '',
-    clear:'',
-    initialValue:''
-  });
-}
-
 
   return (
     <IonPage>
@@ -32,13 +18,13 @@ const Tab1: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Cari Jodoh</IonTitle>
+          <IonTitle>Gebetan</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonList>
         <IonCard>
-          <JodohList doEdit={setCurrent}/>
+          <GebetList doEdit={setCurrent}/>
         </IonCard>
         </IonList>
       </IonContent>
@@ -47,4 +33,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default TrueGebet;

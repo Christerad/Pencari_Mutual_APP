@@ -4,11 +4,11 @@ import {document, heart, trash} from 'ionicons/icons';
 import './Jodoh.css' ; 
 interface Props {
     doEdit:any,
-    doAddGebet:any,
+    doDelete:any,
     doc:any
 }
 
-const Jodoh: React.FC<Props> = ({doEdit,doAddGebet,doc}) => {
+const Gebet: React.FC<Props> = ({doEdit,doDelete,doc}) => {
     let data = doc.data();
 
     return (
@@ -45,8 +45,8 @@ const Jodoh: React.FC<Props> = ({doEdit,doAddGebet,doc}) => {
                     <IonIcon slot="icon-only" icon={heart}></IonIcon>
                 </IonItemOption> */}
 
-                <IonItemOption onClick= {() => doAddGebet(doc.id)}>
-                    <IonIcon slot="icon-only" icon={heart}>
+                <IonItemOption onClick= {() => doDelete(doc.id)}>
+                    <IonIcon slot="icon-only" icon={trash}>
                     </IonIcon>
                 </IonItemOption>
 
@@ -57,4 +57,4 @@ const Jodoh: React.FC<Props> = ({doEdit,doAddGebet,doc}) => {
         
     )
 }
-export default Jodoh;
+export default Gebet;

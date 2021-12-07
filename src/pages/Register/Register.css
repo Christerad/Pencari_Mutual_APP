@@ -1,6 +1,8 @@
 #input-email,
 #input-password,
-#input-repeat-password {
+#input-repeat-password,
+#input-name,
+#input-dob  {
   border: black;
   border-width: 2px;
   background-color: rgb(236, 227, 227);

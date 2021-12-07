@@ -9,6 +9,7 @@ import Profile from '../Profile/Profile';
 import UpdateProfile from '../UpdateProfile/UpdateProfile';
 import { Redirect, Route } from 'react-router-dom';
 import TrueJodoh from './TrueJodoh';
+import TrueGebet from './TrueGebet';
 import Login from '../Login/Login';
 
 
@@ -32,12 +33,15 @@ const Cari_Jodoh: React.FC = () => {
         <Route exact path="/TrueJodoh">
           {user ? <TrueJodoh /> : <Redirect to="/login" />}
         </Route>
+        <Route exact path="/TrueGebet">
+          {user ? <TrueGebet /> : <Redirect to="/login" />}
+        </Route>
        
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
-        <IonTabButton href="/home" tab="home">
+        <IonTabButton href="/TrueGebet" tab="TrueGebet">
           <IonIcon icon= {logIn}></IonIcon>
-          <IonLabel>Login/Register</IonLabel>
+          <IonLabel>Gebetan</IonLabel>
         </IonTabButton>
         <IonTabButton href="/TrueJodoh" tab="TrueJodoh">
         <IonIcon icon= {heartCircle}></IonIcon>

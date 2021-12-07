@@ -21,7 +21,7 @@
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
     "bcryptjs": "^2.4.3",
-    "firebase": "^8.9.1",
+    "firebase": "^8.10.0",
     "ionicons": "^5.4.0",
     "react": "^17.0.1",
     "react-data-props": "^1.1.1",
