@@ -43,6 +43,8 @@ const Register: React.FC = () => {
   let [email, setEmail] = useState();
   let [password, setPassword] = useState();
   const [repeatPassword, setRepeatPassword] = useState();
+  const [name,SetName] = useState();
+  const [birthdate,SetBirthdate]= useState();
 
   const dispatch = useDispatch();
   const history = useHistory();
@@ -56,6 +58,10 @@ const Register: React.FC = () => {
       swal.fire(`invalid email format`);
     } else if (!password) {
       swal.fire(`password required`);
+    } else if (!name) {
+      swal.fire(`name required`);
+    } else if (!birthdate) {
+      swal.fire(`birthdate required`);
     } else if (password !== repeatPassword) {
       swal.fire(`repeat password not same`);
     } else {
@@ -66,7 +72,7 @@ const Register: React.FC = () => {
       } else {
         const userRef = firestore.collection("users");
         password = bcrypt.hashSync(password, 10);
-        userRef.doc(email).set({ email, password, profilePic });
+        userRef.doc(email).set({ email, password, profilePic ,name,birthdate});
         swal.fire(`Congratulation!`, `Sign up succeed`, `success`);
         history.push("/login");
       }
@@ -127,6 +133,22 @@ const Register: React.FC = () => {
               id="input-email"
               type="email"
               placeholder="Input email address"
+            ></IonInput>
+          </IonItem>
+          <IonItem lines="none">
+            <IonInput
+              onIonInput={(e: any) => SetName(e.target.value)}
+              id="input-name"
+              type="text"
+              placeholder="Input name"
+            ></IonInput>
+          </IonItem>
+          <IonItem lines="none">
+            <IonInput
+              onIonInput={(e: any) => SetBirthdate(e.target.value)}
+              id="input-dob"
+              type="date"
+              placeholder="Input Date of Birth"
             ></IonInput>
           </IonItem>
           <IonItem lines="none">

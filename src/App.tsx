@@ -5,7 +5,7 @@ import Register from "./pages/Register/Register";
 import Profile from "./pages/Profile/Profile";
 import Login from "./pages/Login/Login";
 import UpdateProfile from "./pages/UpdateProfile/UpdateProfile";
-import Cari_Jodoh from "./pages/Carijodoh/Cari_Jodoh";
+import Cari_Jodoh from "./pages/Carijodoh/CariJodoh";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -42,12 +42,6 @@ const App: React.FC = () => {
           <Route exact path="/login">
             <Login />
           </Route>
-          {/* <Route exact path="/profile">
-            {user ? <Profile /> : <Redirect to="/login" />}
-          </Route>
-          <Route exact path="/update">
-            {user ? <UpdateProfile /> : <Redirect to="/login" />}
-          </Route> */}
           <Route exact path="/">
             {user ? <Profile /> : <Redirect to="/login" />}
           </Route>

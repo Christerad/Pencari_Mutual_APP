@@ -1,9 +1,11 @@
 import {
   IonButton,
+  IonButtons,
   IonContent,
   IonHeader,
   IonImg,
   IonLabel,
+  IonMenuButton,
   IonPage,
   IonTitle,
   IonToolbar,
@@ -35,12 +37,20 @@ const Profile: React.FC = () => {
 
   return (
     <IonPage>
+      <IonHeader>
+      <IonToolbar>
+          <IonButtons slot="start">
+            <IonMenuButton />
+          </IonButtons>
+          <IonTitle>PROFILE</IonTitle>
+        </IonToolbar>
+      </IonHeader>
       <IonContent>
         <section className="profile-section">
           <IonImg src={user.profilePic}></IonImg>
-          <IonLabel class="label">Name: {user.name}</IonLabel> <br />
-          <IonLabel class="label">Email: {user.email}</IonLabel> <br />
-          <IonLabel class="label">Birthdate: {user.birthdate}</IonLabel>
+           <h2>Name: {user.name}</h2>
+           <h3>Email: {user.email}</h3>
+          <h2>Birthdate: {user.birthdate}</h2>
           <IonButton color="tertiary" id="logout-button" onClick={update}>
             Update Profile
           </IonButton>

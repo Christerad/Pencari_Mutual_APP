@@ -56,8 +56,8 @@ const Login: React.FC = () => {
         }
       }
     }
-    (document.getElementById("input-email") as HTMLInputElement).value = "";
-    (document.getElementById("input-password") as HTMLInputElement).value = "";
+    //(document.getElementById("input-email") as HTMLInputElement).value = "";
+    //(document.getElementById("input-password") as HTMLInputElement).value = "";
   }
 
   function signInWithGoogle() {
