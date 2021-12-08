@@ -8,6 +8,14 @@ and to use TypeScript for the best experience.
 We are currently working on providing more detailed documentation on usage but please refer to our example application for now.
 If you would like to see an example app of the implementation please go to our [react conference app](https://github.com/ionic-team/ionic-react-conference-app)
 
+## Nama Kelompok
+
+Kurnia Christopher - 00000022594
+Steven Tjiawi - 00000032783
+Ezequiel Emeraldo - 00000025545
+Verdyon Rizqullah Pattah - 00000032810
+Giovanni Kurniawan - 00000028665
+
 # Current Status of Components
 
 Below is a list of components yet to be implemented. More information about
