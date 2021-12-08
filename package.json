@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "3.1.2",
+    "@capacitor/android": "3.3.2",
     "@capacitor/app": "1.0.2",
     "@capacitor/core": "3.1.2",
     "@capacitor/haptics": "1.0.2",
@@ -29,7 +29,6 @@
     "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2",
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
     "sweetalert2": "^11.1.2",
@@ -73,7 +72,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.1.2"
+    "@capacitor/cli": "3.1.2",
+    "react-scripts": "4.0.2"
   },
   "description": "An Ionic project"
 }
