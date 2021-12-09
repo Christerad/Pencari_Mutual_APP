@@ -10,10 +10,10 @@ If you would like to see an example app of the implementation please go to our [
 
 ## Nama Kelompok
 
-Kurnia Christopher - 00000022594
-Steven Tjiawi - 00000032783
-Ezequiel Emeraldo - 00000025545
-Verdyon Rizqullah Pattah - 00000032810
+Kurnia Christopher - 00000022594 <br>
+Steven Tjiawi - 00000032783 <br>
+Ezequiel Emeraldo - 00000025545 <br>
+Verdyon Rizqullah Pattah - 00000032810<br>
 Giovanni Kurniawan - 00000028665
 
 # Current Status of Components
