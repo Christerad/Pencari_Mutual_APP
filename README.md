@@ -68,7 +68,3 @@ ionic capacitor open <android|ios>
 - [Ionic Forum](https://forum.ionicframework.com/)
 - [Ionicons](http://ionicons.com/)
 - [Capacitor](https://capacitor.ionicframework.com/)
-
-## License
-
-- [MIT](https://raw.githubusercontent.com/ionic-team/ionic/master/LICENSE)
